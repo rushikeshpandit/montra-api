@@ -1,0 +1,32 @@
+{
+	"name": "montra",
+	"version": "1.0.0",
+	"description": "This project is used for managing personal expenses",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "ts-node index.ts",
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rushikeshpandit/montra-api.git"
+	},
+	"keywords": [
+		"node",
+		"personal",
+		"expenses",
+		"typescript"
+	],
+	"author": "Rushikesh Pandit",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/rushikeshpandit/montra-api/issues"
+	},
+	"homepage": "https://github.com/rushikeshpandit/montra-api#readme",
+	"devDependencies": {
+		"nodemon": "^3.0.1",
+		"ts-node": "^10.9.1",
+		"typescript": "^5.2.2"
+	}
+}
