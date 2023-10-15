@@ -4,7 +4,7 @@
 	"description": "This project is used for managing personal expenses",
 	"main": "dist/server.js",
 	"scripts": {
-		"start": "tsc && node dist/server.js",
+		"start": "tsc && nodemon dist/server.js",
 		"start:watch": "nodemon",
 		"build": "tsc",
 		"test": "jest",
