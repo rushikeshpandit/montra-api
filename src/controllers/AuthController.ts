@@ -1,13 +1,12 @@
-import _ from "lodash";
-import mongoose from "mongoose";
-import { Request, Response } from "express";
 import Bcrypt from "bcryptjs";
+import { Request, Response } from "express";
+import _ from "lodash";
 
 import User from "../models/user";
 
+import Helper from "../utils/helper";
 import loginValidation from "./validations/auth/loginValidation";
 import registrationValidation from "./validations/auth/registrationValidation";
-import Helper from "../utils/helper";
 
 export class AuthController {
 	public async login(req: Request, res: Response) {
@@ -138,11 +137,7 @@ export class AuthController {
 				return res.status(200).send({
 					status: true,
 					message: "User created successfully.",
-					data: _.pick(user, [
-						"name",
-						"email",
-						"_id",
-					]),
+					data: _.pick(user, ["name", "email", "_id"]),
 				});
 			} else {
 				return res.status(200).send({
